@@ -1,33 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>TechLady Hackathon + Training Day by leahbannon</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>TechLady Hackathon + Training Day</h1>
-        <p>December 7, 2013</p>
-
-        <p class="view"><a href="https://github.com/leahbannon/hackathontrainingday">View the Project on GitHub</a></p>
-        <p class="view">Short link: <a href="http://bit.ly/hacktrain">bit.ly/hacktrain</a> <br/><small>Long link: <a href="http://hackathontrainingday.org">hackathontrainingday.org</a></small></p>
-                
-        <ul>
-         
+---
+layout:main
+published:true
+---
           <li><a href="https://github.com/leahbannon/hackathontrainingday/wiki">Discuss on the <strong>Wiki</strong></a></li>
           <li><a href="https://github.com/leahbannon/hackathontrainingday/issues">Create an issue <strong>GitHub</strong></a></li>
            <li><a href="https://twitter.com/leahbannon">Tweet at me!<strong>@</strong></a></li>
@@ -81,7 +55,7 @@ if (!jqueryLoaded) {
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
               if (this.readyState == 'complete') mce_preload_check();
-        }    
+        }
     }
 }
 
@@ -155,7 +129,7 @@ function mce_init_form(){
                                     		this.value = '';
 									    } else {
 									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
 									        } else {
     	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
 	                                        }
@@ -181,12 +155,12 @@ function mce_init_form(){
                                     });
                             });
                         return mce_validator.form();
-                    }, 
+                    },
                     success: mce_success_cb
                 };
       $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
+
+
     });
 }
 function mce_success_cb(resp){
@@ -222,11 +196,11 @@ function mce_success_cb(resp){
         try{
             if (index== -1){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
+                $('#mce-'+resp.result+'-response').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup';
                 var f = $(input_id);
                 if (ftypes[index]=='address'){
@@ -256,6 +230,3 @@ function mce_success_cb(resp){
 
 </script>
 <!--End mc_embed_signup-->
-      </section>
-        </body>
-</html>
