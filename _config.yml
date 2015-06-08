@@ -2,3 +2,6 @@ name: Tech Lady Hackathon and Training Day
 description: 'A day for women from experienced coders to total newbies to gather for civic hacking and training in a supportive environment.'
 
 baseurl: /techladyhackathon
+
+gems:
+  - jekyll-redirect-from
